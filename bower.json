@@ -1,0 +1,21 @@
+{
+  "name": "jest-try-out",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Federico Rota <federico.rota01@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Arxivar/jestTryOut",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Scripts/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
