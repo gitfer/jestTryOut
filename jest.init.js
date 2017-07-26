@@ -1,4 +1,5 @@
 import * as angular from './node_modules/angular/'
+import './Scripts/libs/angular-mocks'
 // require('./node_modules/angular/index.js')
 // module.exports = angular;
 // global.angular = angular;
@@ -14,6 +15,9 @@ global.jQuery = $;
 window.$ = $;
 global.$ = $;
 
+import * as _ from './Scripts/libs/lodash'
+global._ = _; // Richiesta variabile globale _ per nostro modulo utils.
+
 var glob = require('glob'),
     path = require('path');
 const recursiveInclude = filePath => {
@@ -28,7 +32,7 @@ global.sinon = sinon;
 
 // require('./Scripts/app/modules/utils/_.js')
 
-// recursiveInclude('./Scripts/app/controllers/**/*.js');
+recursiveInclude('./Scripts/app/controllers/**/*.js');
 recursiveInclude('./Scripts/app/directives/**/*.js');
 recursiveInclude('./Scripts/app/filters/**/*.js');
 recursiveInclude('./Scripts/app/services/**/*.js');

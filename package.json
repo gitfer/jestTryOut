@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "debug": "node-debug --debug-brk ./node_modules/jest/bin/jest.js --verbose --no-cache --config=./package.json --watchAll"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "angular": "^1.5.3"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "jest": "^20.0.4",
     "sinon": "^1.17.7",
     "sinon-as-promised": "^4.0.0"
